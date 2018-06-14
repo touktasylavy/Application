@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DefaultCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/default_margin_padding_normal"
+    android:layout_marginLeft="@dimen/default_margin_padding_extra_large"
+    android:layout_marginRight="@dimen/default_margin_padding_extra_large"
+    android:layout_marginTop="@dimen/default_margin_padding_large">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="45sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_padding_normal"
+                android:layout_marginLeft="@dimen/default_margin_padding_large"
+                android:layout_marginRight="@dimen/default_margin_padding_large"
+                android:layout_marginTop="@dimen/default_margin_padding_normal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ຈຳນວນເງິນ:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tv_paid_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="ວັນທີ:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_padding_normal"
+                android:layout_marginLeft="@dimen/default_margin_padding_large"
+                android:layout_marginRight="@dimen/default_margin_padding_large"
+                android:layout_marginTop="@dimen/default_margin_padding_normal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_emp_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ເກັບໂດຍ:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="ຫຼ້າສຸດ:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            fontPath="fonts/phetsarath_ot.ttf"
+            android:id="@+id/btn_delete"
+            style="@style/OrangeButton"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="@dimen/sp_25"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_height="match_parent"
+            android:text="ລົບ"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

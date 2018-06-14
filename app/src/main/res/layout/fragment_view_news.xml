@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewsActivity">
+
+
+    <ImageView
+        android:id="@+id/imvShow"
+        android:layout_width="0dp"
+        android:layout_height="255dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/item_up" />
+
+    <TextView
+        android:id="@+id/tv_post_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="PostBy: ..."
+        android:background="@drawable/border_blue"
+        android:paddingLeft="@dimen/default_margin_padding_normal"
+        android:paddingRight="@dimen/default_margin_padding_normal"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvShow" />
+
+    <TextView
+        android:id="@+id/tv_date_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="@dimen/default_margin_padding_normal"
+        android:paddingRight="@dimen/default_margin_padding_normal"
+        android:background="@drawable/border"
+        android:text="10/06/2018"
+        android:textColor="@color/bg_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvShow" />
+
+    <TextView
+        android:id="@+id/tv_type_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Activity"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/border_blue"
+        android:paddingLeft="@dimen/default_margin_padding_normal"
+        android:paddingRight="@dimen/default_margin_padding_normal"
+        app:layout_constraintStart_toStartOf="@+id/tv_post_by"
+        app:layout_constraintTop_toBottomOf="@+id/tv_post_by" />
+
+    <!--<View-->
+        <!--android:id="@+id/view1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/tv_date_post"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/tv_type_news"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tv_type_news" />-->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/bg_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_type_news"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type_news" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black_alpha_40"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+</android.support.constraint.ConstraintLayout>

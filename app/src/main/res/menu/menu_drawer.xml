@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_all">
+
+    <item
+        android:id="@+id/drawer_main"
+        android:checked="true"
+        android:icon="@drawable/ic_email_white_36dp"
+        android:title="@string/main_name" />
+
+    <item
+        android:id="@+id/drawer_dept_division"
+        android:checked="false"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/dept_division" />
+
+    <item
+        android:id="@+id/drawer_room"
+        android:checked="false"
+        android:icon="@drawable/ic_class"
+        android:title="@string/room" />
+
+    <item
+        android:id="@+id/drawer_program"
+        android:checked="false"
+        android:icon="@drawable/ic_gra"
+        android:title="@string/program" />
+
+    <item
+        android:id="@+id/drawer_location"
+        android:checked="false"
+        android:icon="@drawable/ic_gps"
+        android:title="@string/location" />
+
+    <item
+        android:id="@+id/drawer_news"
+        android:checked="false"
+        android:icon="@drawable/ic_news"
+        android:title="@string/news" />
+
+</menu>

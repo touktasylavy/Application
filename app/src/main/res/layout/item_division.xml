@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DefaultCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/default_margin_padding_normal"
+    android:layout_marginLeft="@dimen/default_margin_padding_extra_large"
+    android:layout_marginRight="@dimen/default_margin_padding_extra_large"
+    android:layout_marginTop="@dimen/default_margin_padding_large">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_count"
+            fontPath="fonts/DroidSans-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="45sp"
+            tools:ignore="MissingPrefix" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.2"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_division_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_padding_normal"
+                android:layout_marginLeft="@dimen/default_margin_padding_normal"
+                android:layout_marginRight="@dimen/default_margin_padding_normal"
+                android:layout_marginTop="@dimen/default_margin_padding_normal"
+                android:text="Name"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_padding_normal"
+                android:layout_marginLeft="@dimen/default_margin_padding_normal"
+                android:layout_marginRight="@dimen/default_margin_padding_normal"
+                android:layout_marginTop="@dimen/default_margin_padding_normal"
+                android:text="Tel"
+                android:textColor="@color/colorPrimaryDark" />
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_padding_normal"
+                android:layout_marginLeft="@dimen/default_margin_padding_normal"
+                android:layout_marginRight="@dimen/default_margin_padding_normal"
+                android:layout_marginTop="@dimen/default_margin_padding_normal"
+                android:text="Email"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tv_building_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_padding_normal"
+                android:layout_marginLeft="@dimen/default_margin_padding_normal"
+                android:layout_marginRight="@dimen/default_margin_padding_normal"
+                android:layout_marginTop="@dimen/default_margin_padding_normal"
+                android:paddingLeft="@dimen/default_margin_padding_large"
+                android:paddingRight="@dimen/default_margin_padding_large"
+                android:text="IT"
+                android:background="@drawable/border"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_call"
+                style="@style/BlueButton"
+                fontPath="fonts/DroidSans-Bold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:drawableLeft="@drawable/ic_local_phone_white_36dp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_16"
+                tools:ignore="MissingPrefix" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/btn_email"
+                style="@style/BlueButton"
+                fontPath="fonts/DroidSans-Bold.ttf"
+                android:drawableLeft="@drawable/ic_email_white_36dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_16"
+                tools:ignore="MissingPrefix" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

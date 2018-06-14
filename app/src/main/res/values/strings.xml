@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FEN Campus</string>
+    <string name="main_name">ໜ້າຫຼັກ</string>
+    <string name="view_news">ລາຍລະອຽດຂ່າວ</string>
+
+    <string name="open_drawer">Open Menu</string>
+    <string name="close_drawer">Close Menu</string>
+
+    <string name="dept_division">ພາກວິຊາ ແລະ ພະແນກ</string>
+    <string name="room">ອາຄານ ແລະ ຫ້ອງຮຽນ</string>
+    <string name="program">ຫລັກສູດ</string>
+    <string name="location">ແຜນທີ່</string>
+    <string name="news">ຂ່າວສານ</string>
+
+</resources>
